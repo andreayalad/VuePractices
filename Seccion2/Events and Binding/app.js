@@ -25,6 +25,12 @@ const app = Vue.createApp({
 
     resetInput(){
       this.name =' '
+    },
+    outputFullName(){
+      if (this.name ===''){
+        return '';
+      }
+      return `${this.name} Ayala` 
     }
   }
 });
