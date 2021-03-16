@@ -20,10 +20,13 @@
       <h2>My course goals</h2>
       <input type="text" v-model="enteredGoal"/>
       <button @click="addGoal">Add Goal</button>
-      <p v-if="goals.length === 0">No goals have been added yet - please start adding some!</p>
-      <ul v-else>
+      <p v-show="goals.length === 0">No goals have been added yet - please start adding some!</p>
+      <ul v-show="goals.length > 0">
         <li>Goal</li>
       </ul>
     </section>
   </body>
 </html>
+<!-- Diference between v-if and v-show
+v-if really affects what's on the DOM, it REMOVES the element
+v-show just hides and shows the item with CSS -->
