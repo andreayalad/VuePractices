@@ -11,7 +11,7 @@ const app = Vue.createApp({
             return {
                 active: this.boxASelected
             }
-        }
+        },
     },
     methods:{
         boxSelected(box){
